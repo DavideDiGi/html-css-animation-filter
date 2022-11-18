@@ -77,10 +77,49 @@
 }
 .ex-10-icon {
     font-size: 60px;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+@keyframes rotation {
+    0% {
+        transform: rotate(360deg);
+    }
+    
+}
+    
+
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+    
+/* .ex-11-icon:hover{
+    transform: rotate(0);
+    transition: all 2s;
+} */
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
